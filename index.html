@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Question Answer</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="margin-left: 300px;">Beginner Level JavaScript Interview Questions and Answers for Freshers</h2><hr>
+        <p>Q1. What is JavaScript?</p>
+        <button type="submit" class="btn" onclick="open1Popup()">View Answer</button>
+
+        <p>Q2. What are the data types supported by JavaScript?</p>
+        <button type="submit" class="btn" onclick="open2Popup()">View Answer</button>
+
+        <p>Q3. What are the features of JavaScript?</p>
+        <button type="submit" class="btn" onclick="open3Popup()">View Answer</button>
+
+        <p>Q4. Is JavaScript a case-sensitive language?</p>
+        <button type="submit" class="btn" onclick="open4Popup()">View Answer</button>
+
+        <p>Q5. What are the advantages of JavaScript?</p>
+        <button type="submit" class="btn" onclick="open5Popup()">View Answer</button>
+
+        
+
+       
+
+
+
+
+
+        <div class="popup" id="1popup">
+            <h2>Answer</h2>
+            <p>JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.</p>
+            <button type="button" onclick="close1Popup()">Close</button>
+        </div>
+
+        <div class="popup" id="2popup">
+            <h2>Answer</h2>
+             <p>The data types supported by JavaScript are:<br><br>
+
+                Undefined <br>
+                Null <br>
+                Boolean<br>
+                String<br>
+                Symbol<br>
+                Number<br>
+                Object</p>
+        <button type="button" onclick="close2Popup()">Close</button>
+        </div>
+
+        <div class="popup" id="3popup">
+            <h2>Answer</h2>
+             <p>Following are the features of JavaScript: <br><br>
+
+              1)  It is a lightweight, interpreted programming language.<br><br>
+              2)  It is designed for creating network-centric applications.<br><br>
+              3)  It is complementary to and integrated with Java.<br><br>
+              4)  It is an open and cross-platform scripting language.</p>
+           <button type="button" onclick="close3Popup()">Close</button>
+        </div>
+
+
+        <div class="popup" id="4popup">
+            <h2>Answer</h2>
+             <p>Yes, JavaScript is a case sensitive language.  The language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</p>
+            <button type="button" onclick="close4Popup()">Close</button>
+        </div>
+ 
+
+        <div class="popup" id="5popup">
+            <h2>Answer</h2>
+             <p>Following are the advantages of using JavaScript -
+
+               1) Less server interaction - You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.<br><br>
+               2) Immediate feedback to the visitors - They dont have to wait for a page reload to see if they have forgotten to enter something.<br><br>
+               3) Increased interactivity - You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.<br><br>
+               4) Richer interfaces - You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.</p>
+            <button type="button" onclick="close5Popup()">Close</button>
+        </div>
+    </div>
+    
+
+    <script>
+
+        let popup1 = document.getElementById("1popup");
+        function open1Popup(){
+            popup1.classList.add("open-popup");
+        }
+        function close1Popup(){
+            popup1.classList.remove("open-popup");
+        }
+
+
+        let popup2 = document.getElementById("2popup");
+        function open2Popup(){
+            popup2.classList.add("open-popup");
+        }
+        function close2Popup(){
+            popup2.classList.remove("open-popup");
+        }
+
+        let popup3 = document.getElementById("3popup");
+        function open3Popup(){
+            popup3.classList.add("open-popup");
+        }
+        function close3Popup(){
+            popup3.classList.remove("open-popup");
+        }
+
+
+        let popup4 = document.getElementById("4popup");
+        function open4Popup(){
+            popup4.classList.add("open-popup");
+        }
+        function close4Popup(){
+            popup4.classList.remove("open-popup");
+        }
+
+
+        let popup5 = document.getElementById("5popup");
+        function open5Popup(){
+            popup5.classList.add("open-popup");
+        }
+        function close5Popup(){
+            popup5.classList.remove("open-popup");
+        }
+
+ 
+    </script>
+</body>
+</html>
